@@ -1,0 +1,76 @@
+# ===============================
+# Application / HTTP Metrics
+# ===============================
+http_requests_total
+http_requests_total{status=~"5.."}
+
+http_request_duration_seconds_bucket
+http_request_duration_seconds_sum
+http_request_duration_seconds_count
+
+process_cpu_seconds_total
+process_resident_memory_bytes
+go_goroutines
+jvm_threads_live
+
+# ===============================
+# Kubernetes Pod & Container Metrics
+# ===============================
+kube_pod_status_phase
+kube_pod_container_status_ready
+kube_pod_container_status_restarts_total
+
+container_cpu_usage_seconds_total
+container_cpu_cfs_throttled_seconds_total
+container_memory_working_set_bytes
+container_fs_usage_bytes
+container_oom_events_total
+
+# ===============================
+# Node (VM / Bare Metal) Metrics
+# ===============================
+node_cpu_seconds_total
+node_load1
+node_load5
+node_load15
+
+node_memory_MemAvailable_bytes
+node_memory_MemTotal_bytes
+
+node_filesystem_size_bytes
+node_filesystem_avail_bytes
+node_filesystem_usage_bytes
+
+node_disk_io_time_seconds_total
+
+node_network_receive_bytes_total
+node_network_transmit_bytes_total
+node_network_receive_errs_total
+
+# ===============================
+# Kubernetes Control Plane Metrics
+# ===============================
+apiserver_request_total
+apiserver_request_duration_seconds_bucket
+
+scheduler_e2e_scheduling_duration_seconds_bucket
+
+workqueue_depth
+workqueue_queue_duration_seconds_bucket
+
+# ===============================
+# Database Metrics
+# ===============================
+mysql_global_status_threads_connected
+mysql_global_status_slow_queries
+mysql_global_status_queries
+
+pg_stat_activity_count
+pg_stat_database_xact_commit
+pg_stat_database_xact_rollback
+
+# ===============================
+# Ingress / Load Balancer Metrics
+# ===============================
+nginx_ingress_controller_requests
+nginx_ingress_controller_request_duration_seconds_bucket
