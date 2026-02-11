@@ -26,6 +26,11 @@ container_memory_working_set_bytes
 container_fs_usage_bytes
 container_oom_events_total
 
+container_cpu_usage_seconds_total{pod="payment-pod", container="app",namespace="prod"}
+container_cpu_usage_seconds_total{pod="payment-pod", container="sidecar"}
+container_cpu_usage_seconds_total{pod="payment-pod", container="istio-proxy"}
+
+
 # ===============================
 # Node (VM / Bare Metal) Metrics
 # ===============================
