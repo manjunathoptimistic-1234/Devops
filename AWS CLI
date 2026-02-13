@@ -39,3 +39,8 @@ aws eks update-kubeconfig --name observability
 -->to create nodes
 
 
+-->to get grafana password
+kubectl get secret monitoring-grafana -n monitoring -o jsonpath="{.data.admin-password}" | base64 --decode
+
+
+
