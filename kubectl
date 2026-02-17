@@ -38,5 +38,16 @@ spec:
         ports:
         - containerPort: 80
 
+kubectl apply -f deployment.yml
+
+kubectl get deploy
+
+curl -L http://ipaddress:80
+
+
 
 service.yaml
+
+
+
+
